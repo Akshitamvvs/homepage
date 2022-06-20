@@ -9,8 +9,8 @@ export default function Layout({ children }) {
         <div className="sidebar is-narrow">
           <Menu />
         </div>
+        <div className="column main-content is-flexible">{children}</div>
       </div>
-      <div className="column main-content is-flexible">{children}</div>
     </>
   );
 }

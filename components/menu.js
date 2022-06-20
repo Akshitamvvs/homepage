@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 export function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   let activeMenuItemClassName = "is-active-menu-item";
   return (
@@ -26,81 +28,91 @@ export function Menu() {
         id="navMenu"
       >
         <li>
-          <Link
-            href="/"
-            className={({ isActive }) =>
-              isActive ? activeMenuItemClassName : undefined
-            }
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            <a>Bio</a>
+          <Link href="/">
+            <a
+              className={`${
+                router.pathname == "/" ? activeMenuItemClassName : ""
+              }`}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              Bio
+            </a>
           </Link>
         </li>
         <li>
-          <Link
-            href="/publications"
-            className={({ isActive }) =>
-              isActive ? activeMenuItemClassName : undefined
-            }
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            <a>Publications</a>
+          <Link href="/publications">
+            <a
+              className={`${
+                router.pathname == "/publications"
+                  ? activeMenuItemClassName
+                  : ""
+              }`}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              Publications
+            </a>
           </Link>
         </li>
         <li>
-          <Link
-            href="/professional"
-            className={({ isActive }) =>
-              isActive ? activeMenuItemClassName : undefined
-            }
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            <a>Professional Activities</a>
+          <Link href="/professional">
+            <a
+              className={`${
+                router.pathname == "/professional"
+                  ? activeMenuItemClassName
+                  : ""
+              }`}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              Professional Activities
+            </a>
           </Link>
         </li>
         <li>
-          <Link
-            href="/teaching"
-            className={({ isActive }) =>
-              isActive ? activeMenuItemClassName : undefined
-            }
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            <a>Teaching</a>
+          <Link href="/teaching">
+            <a
+              className={`${
+                router.pathname == "/teaching" ? activeMenuItemClassName : ""
+              }`}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              Teaching
+            </a>
           </Link>
         </li>
         <li>
-          <Link
-            href="/cv"
-            className={({ isActive }) =>
-              isActive ? activeMenuItemClassName : undefined
-            }
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            <a>CV</a>
+          <Link href="/cv">
+            <a
+              className={`${
+                router.pathname == "/cv" ? activeMenuItemClassName : ""
+              }`}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              CV
+            </a>
           </Link>
         </li>
         <li>
-          <Link
-            href="/contact"
-            className={({ isActive }) =>
-              isActive ? activeMenuItemClassName : undefined
-            }
-            onClick={() => {
-              setIsMenuOpen(!isMenuOpen);
-            }}
-          >
-            <a>Contact</a>
+          <Link href="/contact">
+            <a
+              className={`${
+                router.pathname == "/contact" ? activeMenuItemClassName : ""
+              }`}
+              onClick={() => {
+                setIsMenuOpen(!isMenuOpen);
+              }}
+            >
+              Contact
+            </a>
           </Link>
         </li>
       </ul>
