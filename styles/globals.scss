@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import "./../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// Add pink and its invert
+$theme-color: #aa7bc3;
+$theme-color-light: #e7d3f2;
+$theme-font-color: #944bbb;
+$theme-color-invert: #fff;
+$link-color: #944bbb;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 4. Import the rest of Bulma
+@import "../node_modules/bulma/bulma";
