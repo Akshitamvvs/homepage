@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { ENDPOINTS } from "./endpoints";
 
 export function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,10 +29,10 @@ export function Menu() {
         id="navMenu"
       >
         <li>
-          <Link href="/">
+          <Link href={ENDPOINTS.bio}>
             <a
               className={`${
-                router.pathname == "/" ? activeMenuItemClassName : ""
+                router.pathname == ENDPOINTS.bio ? activeMenuItemClassName : ""
               }`}
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen);
@@ -42,10 +43,10 @@ export function Menu() {
           </Link>
         </li>
         <li>
-          <Link href="/publications">
+          <Link href={ENDPOINTS.publications}>
             <a
               className={`${
-                router.pathname == "/publications"
+                router.pathname == ENDPOINTS.publications
                   ? activeMenuItemClassName
                   : ""
               }`}
@@ -58,10 +59,10 @@ export function Menu() {
           </Link>
         </li>
         <li>
-          <Link href="/professional">
+          <Link href={ENDPOINTS.professional}>
             <a
               className={`${
-                router.pathname == "/professional"
+                router.pathname == ENDPOINTS.professional
                   ? activeMenuItemClassName
                   : ""
               }`}
@@ -74,10 +75,12 @@ export function Menu() {
           </Link>
         </li>
         <li>
-          <Link href="/teaching">
+          <Link href={ENDPOINTS.teaching}>
             <a
               className={`${
-                router.pathname == "/teaching" ? activeMenuItemClassName : ""
+                router.pathname == ENDPOINTS.teaching
+                  ? activeMenuItemClassName
+                  : ""
               }`}
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen);
@@ -88,10 +91,10 @@ export function Menu() {
           </Link>
         </li>
         <li>
-          <Link href="/cv">
+          <Link href={ENDPOINTS.cv}>
             <a
               className={`${
-                router.pathname == "/cv" ? activeMenuItemClassName : ""
+                router.pathname == ENDPOINTS.cv ? activeMenuItemClassName : ""
               }`}
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen);
@@ -102,10 +105,12 @@ export function Menu() {
           </Link>
         </li>
         <li>
-          <Link href="/contact">
+          <Link href={ENDPOINTS.contact}>
             <a
               className={`${
-                router.pathname == "/contact" ? activeMenuItemClassName : ""
+                router.pathname == ENDPOINTS.contact
+                  ? activeMenuItemClassName
+                  : ""
               }`}
               onClick={() => {
                 setIsMenuOpen(!isMenuOpen);

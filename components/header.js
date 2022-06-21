@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ENDPOINTS } from "./endpoints";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
@@ -18,7 +19,7 @@ export function Header() {
           className="is-rounded"
         />
       </figure>
-      <Link href="/">
+      <Link href={ENDPOINTS.bio}>
         <a>
           <h1>
             <span className="firstname">Akshita </span>
