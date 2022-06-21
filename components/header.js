@@ -1,15 +1,20 @@
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
+import profilePic from "../public/images/profile.jpeg";
+
 export function Header() {
   return (
     <section className="section header">
-      <figure className="image is-128x128 profile-photo">
-        <img
+      <figure className="image profile-photo">
+        <Image
+          src={profilePic}
+          alt="Profile Picture"
+          width={128}
+          height={128}
           className="is-rounded"
-          src={require("../public/images/profile.jpeg")}
-          alt=""
         />
       </figure>
       <a href="https://akshitamvvs.github.io/homepage/">
