@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
@@ -17,13 +18,14 @@ export function Header() {
           className="is-rounded"
         />
       </figure>
-      <a href="https://akshitamvvs.github.io/homepage/">
-        {" "}
-        <h1>
-          <span className="firstname">Akshita </span>
-          <span className="surname">Maradapu Vera Venkata Sai</span>
-        </h1>
-      </a>
+      <Link href="/">
+        <a>
+          <h1>
+            <span className="firstname">Akshita </span>
+            <span className="surname">Maradapu Vera Venkata Sai</span>
+          </h1>
+        </a>
+      </Link>
       <h2>Ph.D Student in Computer Science</h2>
 
       <h3>
