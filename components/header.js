@@ -1,18 +1,19 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { ENDPOINTS } from "./endpoints";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
-import profilePic from "../public/images/profile.jpeg";
+import { faLinkedin, faGoogle } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
+// import profilePic from "../public/images/profile.jpeg";
 
 export function Header() {
   return (
     <section className="section header">
-      <figure className="image profile-photo">
-        <Image
-          src={profilePic}
+      <figure className="image is-128x128 profile-photo">
+        <img
+          src="/images/profile.jpeg"
           alt="Profile Picture"
           width={128}
           height={128}
