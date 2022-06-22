@@ -2,7 +2,7 @@ import { LineItem } from "../components/LineItem";
 import {
   RESEARCH_ASSISTANT,
   PROFESSIONAL_ACTIVITIES,
-} from "./data/professional";
+} from "../data/professional";
 
 export default function ProfessionalActivities() {
   const ra_list = RESEARCH_ASSISTANT.map((ra, idx) => (

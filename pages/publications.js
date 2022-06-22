@@ -1,4 +1,4 @@
-import { PUBLICATION_DATA } from "./data/publications";
+import { PUBLICATION_DATA } from "../data/publications";
 
 function PublicationItem({ publication_details }) {
   const {

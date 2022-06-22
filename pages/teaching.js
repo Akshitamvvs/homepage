@@ -1,6 +1,6 @@
 import { LineItem } from "../components/LineItem";
 
-import { TEACHING_ASSISTANT, TEACHING_FELLOW } from "./data/teaching";
+import { TEACHING_ASSISTANT, TEACHING_FELLOW } from "../data/teaching";
 
 export default function Teaching() {
   const ta_list = TEACHING_ASSISTANT.map((ta, idx) => (
