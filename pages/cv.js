@@ -11,22 +11,18 @@ export default function CV() {
       <p>
         <a
           className="download-btn"
-          href="{require('../public/docs/cv.pdf')}"
+          href="/docs/cv.pdf"
           download="Akshita_MVVS_CV.pdf"
         >
           <FontAwesomeIcon icon={faCircleDown} /> Download
         </a>
-        <a
-          href={require("../public/docs/cv.pdf")}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/docs/cv.pdf" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faShareFromSquare} /> Open in a new tab
         </a>
       </p>
       <div className="cv-embed">
         <object
-          data={require("../public/docs/cv.pdf")}
+          data="/docs/cv.pdf"
           type="application/pdf"
           width="80%"
           height="700px"

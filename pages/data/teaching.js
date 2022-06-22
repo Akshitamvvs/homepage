@@ -46,23 +46,13 @@ export const TEACHING_FELLOW = [
   {
     date: "Spring 2020",
     title: "CSC4350/6350 Software Engineering.",
-    ext: `
-    <b>Awarded</b> <a href="https://akshitamvvs.github.io/homepage/static_assets/docs/ogtaward.pdf" 
-      target="_blank"
-      rel="noopener noreferrer">Outstanding Graduate Teaching Assistant.
-      </a>
-    `,
+    extra:
+      "**Awarded** [Outstanding Graduate Teaching Assistant](/docs/ogtaward.pdf).",
   },
   {
     date: "Spring 2019",
     title: "CSC4350/6350 Software Engineering.",
-    ext: `
-      <b>Teaching Effectiveness:</b> 4.65, 
-      <b>Evaluation:</b> <a href="https://akshitamvvs.github.io/homepage/static_assets/pages/CSC4350.html"
-        target="_blank"
-        rel="noopener noreferrer">CSC4350</a>, 
-      <a href="https://akshitamvvs.github.io/homepage/static_assets/pages/CSC6350.html" 
-        target="_blank"
-        rel="noopener noreferrer">CSC6350</a>`,
+    extra:
+      "**Teaching Effectiveness:** 4.65, **Evaluation:** [CSC4350](/docs/CSC4350.html), [CSC6350](/docs/CSC6350.html)",
   },
 ];

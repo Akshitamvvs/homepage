@@ -16,9 +16,31 @@ function PublicationItem({ publication_details }) {
   const self_author = underline;
   const [authors_left, authors_right] = authors.split(self_author);
 
-  let doi_url;
+  let DOI, PDF;
   if (doi) {
-    doi_url = "https://doi.org/" + doi;
+    const doi_url = "https://doi.org/" + doi;
+    DOI = (
+      <a
+        className="paper-btn doi"
+        href={doi_url}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        DOI
+      </a>
+    );
+  }
+  if (pdf) {
+    PDF = (
+      <a
+        className="paper-btn pdf"
+        href={pdf}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        PDF
+      </a>
+    );
   }
 
   return (
@@ -36,22 +58,8 @@ function PublicationItem({ publication_details }) {
           "{title}"
         </a>
         , <span className="journal-title">{journal_long}</span>, {date}, {page}{" "}
-        <a
-          className="paper-btn doi"
-          href={doi_url}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          DOI
-        </a>
-        <a
-          className="paper-btn pdf"
-          href={pdf}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          PDF
-        </a>
+        {DOI}
+        {PDF}
       </p>
     </li>
   );
