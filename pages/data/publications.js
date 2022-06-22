@@ -47,7 +47,7 @@ export const PUBLICATION_DATA = [
     date: "2021",
     page: "pp. 471-478",
     doi: "10.1109/SWC50871.2021.00070",
-    // pdf: require("../assets/publications/SCI-1570734400.pdf"),
+    pdf: "/publications/SCI-1570734400.pdf",
   },
   {
     journal_short: "TST",
