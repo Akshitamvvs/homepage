@@ -1,17 +1,33 @@
-import Link from "next/link";
+import { useRouter } from "next/router";
 import Markdown from "markdown-to-jsx";
 
-function parseMarkdown(md_text) {
+function CustomMarkdown({ md_text }) {
   // Parses a markown text and returns React JSX.
-  let html_text = (
+
+  const router = useRouter();
+  const getLink = (path) => `${router.basePath}${path}`;
+
+  // If there are any relative URLs, intercept them and prepend a basePath
+  const hrefInterceptor = function ({ children, ...props }) {
+    let newHref = props.href;
+    if (newHref.startsWith("/")) {
+      newHref = getLink(newHref);
+    }
+    const newProps = {
+      ...props,
+      href: newHref,
+      target: "_blank",
+      rel: "noopener noreferrer",
+    };
+    return <a {...newProps}>{children}</a>;
+  };
+
+  return (
     <Markdown
       options={{
         overrides: {
           a: {
-            props: {
-              target: "_blank",
-              rel: "noopener noreferrer",
-            },
+            component: hrefInterceptor,
           },
         },
       }}
@@ -19,14 +35,13 @@ function parseMarkdown(md_text) {
       {md_text}
     </Markdown>
   );
-  return html_text;
 }
 
 export function LineItem({ item }) {
   const { date, title, extra } = item;
   let extra_content;
   if (extra) {
-    extra_content = parseMarkdown(extra);
+    extra_content = <CustomMarkdown md_text={extra} />;
   }
 
   const season_class = (date) => {

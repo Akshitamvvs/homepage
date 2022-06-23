@@ -17,7 +17,7 @@ export function Header() {
     <section className="section header">
       <figure className="image is-128x128 profile-photo">
         <img
-          src={getLink("/images/profile.jpeg")}
+          src={getLink("/images/profile.jpg")}
           alt="Profile Picture"
           width={128}
           height={128}
