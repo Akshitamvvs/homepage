@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 
 function parseMarkdown(md_text) {
