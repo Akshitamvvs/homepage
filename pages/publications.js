@@ -1,6 +1,10 @@
+import { useRouter } from "next/router";
 import { PUBLICATION_DATA } from "../data/publications";
 
 function PublicationItem({ publication_details }) {
+  const router = useRouter();
+  const getLink = (path) => `${router.basePath}${path}`;
+
   const {
     journal_short,
     journal_long,
@@ -31,10 +35,14 @@ function PublicationItem({ publication_details }) {
     );
   }
   if (pdf) {
+    let pdf_url = pdf;
+    // if link is relative, prepend basePath
+    if (pdf_url.startsWith("/")) pdf_url = getLink(pdf_url);
+
     PDF = (
       <a
         className="paper-btn pdf"
-        href={pdf}
+        href={pdf_url}
         target="_blank"
         rel="noopener noreferrer"
       >

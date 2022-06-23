@@ -1,5 +1,6 @@
 // import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { ENDPOINTS } from "./endpoints";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -9,11 +10,14 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 // import profilePic from "../public/images/profile.jpeg";
 
 export function Header() {
+  const router = useRouter();
+  const getLink = (path) => `${router.basePath}${path}`;
+
   return (
     <section className="section header">
       <figure className="image is-128x128 profile-photo">
         <img
-          src="/images/profile.jpeg"
+          src={getLink("/images/profile.jpeg")}
           alt="Profile Picture"
           width={128}
           height={128}

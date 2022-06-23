@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleDown,
@@ -5,24 +6,31 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 
 export default function CV() {
+  const router = useRouter();
+  const getLink = (path) => `${router.basePath}${path}`;
+
   return (
     <section className="main-section">
       <h1>CV</h1>
       <p>
         <a
           className="download-btn"
-          href="/docs/cv.pdf"
+          href={getLink("/docs/cv.pdf")}
           download="Akshita_MVVS_CV.pdf"
         >
           <FontAwesomeIcon icon={faCircleDown} /> Download
         </a>
-        <a href="/docs/cv.pdf" target="_blank" rel="noopener noreferrer">
+        <a
+          href={getLink("/docs/cv.pdf")}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faShareFromSquare} /> Open in a new tab
         </a>
       </p>
       <div className="cv-embed">
         <object
-          data="/docs/cv.pdf"
+          data={getLink("/docs/cv.pdf")}
           type="application/pdf"
           width="80%"
           height="700px"
