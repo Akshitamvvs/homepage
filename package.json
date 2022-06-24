@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build-only": "next build",
     "build": "next build && next export && touch out/.nojekyll",
-    "deploy": "gh-pages -b main -d out -t true",
+    "deploy": "gh-pages -b gh-pages -d out -t true",
     "start": "next start",
     "lint": "next lint",
     "export": "next export"
