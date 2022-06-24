@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: "/akshita-next-site",
+  basePath: "/homepage",
 };
 
 module.exports = nextConfig;
