@@ -5,7 +5,9 @@ function PublicationItem({ publication_details }) {
   const router = useRouter();
   const getLink = (path) => `${router.basePath}${path}`;
 
-  const {
+  const DEFAULT_UNDERLINE = "A. M. V. V. Sai";
+
+  let {
     journal_short,
     journal_long,
     authors,
@@ -14,13 +16,15 @@ function PublicationItem({ publication_details }) {
     date,
     page,
     doi,
+    journal_href,
     pdf,
   } = publication_details;
 
-  const self_author = underline;
+  const self_author = underline ? underline : DEFAULT_UNDERLINE;
   const [authors_left, authors_right] = authors.split(self_author);
 
   let DOI, PDF;
+
   if (doi) {
     const doi_url = "https://doi.org/" + doi;
     DOI = (
@@ -34,15 +38,15 @@ function PublicationItem({ publication_details }) {
       </a>
     );
   }
+
+  // Parse and modify relative urls for PDFs, if applicable
   if (pdf) {
-    let pdf_url = pdf;
-    // if link is relative, prepend basePath
-    if (pdf_url.startsWith("/")) pdf_url = getLink(pdf_url);
+    if (pdf.startsWith("/")) pdf = getLink(pdf);
 
     PDF = (
       <a
         className="paper-btn pdf"
-        href={pdf_url}
+        href={pdf}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -50,6 +54,9 @@ function PublicationItem({ publication_details }) {
       </a>
     );
   }
+
+  // Use Journal Href if available. If not, default to pdf url
+  journal_href = journal_href ? journal_href : pdf;
 
   return (
     <li>
@@ -59,7 +66,7 @@ function PublicationItem({ publication_details }) {
         {authors_right},{" "}
         <a
           className="paper-title"
-          href={pdf}
+          href={journal_href}
           target="_blank"
           rel="noopener noreferrer"
         >

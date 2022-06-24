@@ -5,31 +5,32 @@ export const PUBLICATION_DATA = [
         journal_short: "",
         journal_long: "",
         authors: "",
-        underline: "",
+        underline: "", // only needed to over-ride default value of "A. M. V. V. Sai"
         title: "",
         date: "",
         page: "",
         doi: "",
-        pdf: "",
+        journal_href: "",
+        pdf: "", // Externally hosted -> Absolute URL, Self-hosting -> Relative URL w.r.t public/ (e.g /publications/paper.pdf)
       },
       */
   {
     journal_short: "WCMC",
     journal_long: "Wireless Communications and Mobile Computing",
     authors: "C. Jang, J. Han, A. M. V. V. Sai, Y. Li, O. Yi",
-    underline: "A. M. V. V. Sai",
     title:
       "A Study on Scalar Multiplication Parallel Processing for X25519 Decryption of 5G Core Network SIDF Function for mMTC IoT Environment",
     date: "2022",
     page: "1-1",
     doi: "10.1155/2022/4087816",
-    pdf: "https://www.hindawi.com/journals/wcmc/2022/4087816/#reprints",
+    journal_href:
+      "https://www.hindawi.com/journals/wcmc/2022/4087816/#reprints",
+    pdf: "https://downloads.hindawi.com/journals/wcmc/2022/4087816.pdf",
   },
   {
     journal_short: "Neurocomputing",
     journal_long: "Neurocomputing",
     authors: "Q. Luo, D. Yu, A. M. V. V. Sai, Z. Cai, X. Cheng",
-    underline: "A. M. V. V. Sai",
     title: "A Survey of Structural Representation Learning for Social Networks",
     date: "2022",
     page: "ISSN 0925-2312",
@@ -41,7 +42,6 @@ export const PUBLICATION_DATA = [
     journal_long:
       "IEEE SmartWorld, Ubiquitous Intelligence & Computing, Advanced & Trusted Computing, Scalable Computing & Communications, Internet of People and Smart City Innovation (SmartWorld/SCALCOM/UIC/ATC/IOP/SCI)",
     authors: "A. M. V. V. Sai, K. Zhang and Y. Li",
-    underline: "A. M. V. V. Sai",
     title:
       "User Motivation Based Privacy Preservation in Location Based Social Networks",
     date: "2021",
@@ -53,7 +53,6 @@ export const PUBLICATION_DATA = [
     journal_short: "TST",
     journal_long: "Tsinghua Science and Technology",
     authors: "J. Li, A. M. V. V. Sai, X. Cheng, W. Cheng, Z. Tian and Y. Li",
-    underline: "A. M. V. V. Sai",
     title:
       "Sampling-based approximate skyline query in sensor equipped IoT networks",
     date: "Apr. 2021",
@@ -65,7 +64,6 @@ export const PUBLICATION_DATA = [
     journal_short: "JOCO",
     journal_long: "Journal of Combinatorial Optimization",
     authors: "Z. He, A. M. V. V. Sai, Y. Huang, H. Zhang and Q. Han",
-    underline: "A. M. V. V. Sai",
     title:
       "Differentially private approximate aggregation based on feature selection",
     date: "Feb. 2021",
@@ -77,7 +75,6 @@ export const PUBLICATION_DATA = [
     journal_short: "TVT",
     journal_long: "IEEE Transactions on Vehicular Technology",
     authors: "Y. Lin, Z. Cai, X. Wang, F. Hao, L. Wang and A. M. V. V. Sai",
-    underline: "A. M. V. V. Sai",
     title:
       "Multi-Round Incentive Mechanism for Cold Start-Enabled Mobile Crowdsensing",
     date: "Jan. 2021",
@@ -91,7 +88,6 @@ export const PUBLICATION_DATA = [
     journal_long:
       "IEEE Intl Conf on Parallel & Distributed Processing with Applications, Big Data & Cloud Computing, Sustainable Computing & Communications, Social Computing & Networking (ISPA/BDCloud/SocialCom/SustainCom)",
     authors: "F. Zhao, Y. Huang, A. M. V. V. Sai and Y. Wu",
-    underline: "A. M. V. V. Sai",
     title: "A Cluster-based Solution to Achieve Fairness in Federated Learning",
     date: "2020",
     page: "pp. 875-882",
@@ -102,7 +98,6 @@ export const PUBLICATION_DATA = [
     journal_short: "IEEE Access",
     journal_long: "IEEE Access",
     authors: "A. M. V. V. Sai and Y. Li",
-    underline: "A. M. V. V. Sai",
     title: "A Survey on Privacy Issues in Mobile Social Networks",
     date: "2020",
     page: "vol.8, pp. 130906-130921",
@@ -113,7 +108,6 @@ export const PUBLICATION_DATA = [
     journal_short: "IEEE Access",
     journal_long: "IEEE Access",
     authors: "K. Yan, G. Lu, G. Luo, X. Zheng, L. Tian and A. M. V. V. Sai",
-    underline: "A. M. V. V. Sai",
     title:
       "Location Privacy-Aware Task Bidding and Assignment for Mobile Crowd-Sensing",
     date: "2019",
@@ -125,7 +119,6 @@ export const PUBLICATION_DATA = [
     journal_short: "EURASIP",
     journal_long: "EURASIP Journal on Wireless Communications and Networking",
     authors: "Y.Wang, X. Tao, F. Zhao, B. Tiaa and A. M. V. V. Sai",
-    underline: "A. M. V. V. Sai",
     title: "SLA-aware resource scheduling algorithm for cloud storage",
     date: "Dec. 2020",
     page: "1-10",
@@ -136,7 +129,6 @@ export const PUBLICATION_DATA = [
     journal_short: "IEEE Access",
     journal_long: "IEEE Access",
     authors: "K. Yan, G. Lu, G. Luo, X. Zheng, L. Tian and A. M. V. V. Sai",
-    underline: "A. M. V. V. Sai",
     title:
       "A comprehensive location-privacy-awareness task selection mechanism in mobile crowd-sensing",
     date: "2019",
@@ -148,7 +140,6 @@ export const PUBLICATION_DATA = [
     journal_short: "Book Chapter",
     journal_long: "SpringerInternational Publishing",
     authors: " Z. He, Y. Lin, Y. Liang, X. Wang, A. M. V. V. Sai, and Z. Cai",
-    underline: "A. M. V. V. Sai",
     title:
       "Modeling Malware Propagation Dynamics and Developing PreventionMethods in Wireless Sensor Networks",
     date: "2019",
