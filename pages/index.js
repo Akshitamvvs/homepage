@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,9 +7,8 @@ export default function Home() {
       <section className="main-section">
         <h1>About</h1>
         <p>
-          Hello, world! Welcome to my webpage. My name is Akshita Maradapu Vera
-          Venkata Sai. I'm a 4th year Ph.D. student working under the
-          supervision of{" "}
+          Hi! My name is Akshita Maradapu Vera Venkata Sai. I'm a 4th year Ph.D.
+          student working under the supervision of{" "}
           <a
             href="http://li.csgsu.org/index.html"
             target="_blank"
@@ -42,8 +40,9 @@ export default function Home() {
           >
             Georgia State University
           </a>
-          . I have completed my Masters from Georgia State University in 2017
-          with research focused on VNE and Security and Privacy under{" "}
+          . I completed my Masters in Computer Science from Georgia State
+          University in 2017, with research focused on VNE and Security and
+          Privacy under{" "}
           <a
             href="https://xiaojuncao.github.io/"
             target="_blank"

@@ -6,6 +6,8 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <title>Akshita MVVS - Homepage</title>
         <meta
           property="og:title"
