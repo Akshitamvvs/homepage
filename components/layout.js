@@ -1,13 +1,19 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import { Menu } from "./menu";
 import { Header } from "./header";
 
 export default function Layout({ children }) {
+  const router = useRouter();
+  const getLink = (path) => `${router.basePath}${path}`;
+
+  const faviconHref = getLink("/favicon.ico");
+
   return (
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href={faviconHref} />
         <title>Akshita MVVS - Homepage</title>
         <meta
           property="og:title"
