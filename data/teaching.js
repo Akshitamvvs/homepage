@@ -1,7 +1,12 @@
 export const TEACHING_ASSISTANT = [
   {
+    date: "Summer 2022",
+    title:
+      "CSC2510 Theoretical Foundations of Computer Science (Lab Assistant)",
+  },
+  {
     date: "Fall 2021",
-    title: "CSC8223 Instroduction to Internet of Things",
+    title: "CSC8223 Introduction to Internet of Things",
   },
   {
     date: "Summer 2021",
@@ -42,6 +47,8 @@ export const TEACHING_FELLOW = [
   {
     date: "Spring 2022",
     title: "CSC4740/6740 Data Mining",
+    extra:
+      "**Teaching Effectiveness:** 4.7 (avg.) **Evaluation:** [CSC4740](/docs/sp22dmeval4.pdf), [CSC6740](/docs/sp22dmeval4.pdf) ",
   },
   {
     date: "Spring 2020",
@@ -53,6 +60,6 @@ export const TEACHING_FELLOW = [
     date: "Spring 2019",
     title: "CSC4350/6350 Software Engineering.",
     extra:
-      "**Teaching Effectiveness:** 4.65, **Evaluation:** [CSC4350](/docs/CSC4350.html), [CSC6350](/docs/CSC6350.html)",
+      "**Teaching Effectiveness:** 4.65 (avg.) **Evaluation:** [CSC4350](/docs/CSC4350.html), [CSC6350](/docs/CSC6350.html)",
   },
 ];
