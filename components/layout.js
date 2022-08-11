@@ -25,6 +25,10 @@ export default function Layout({ children }) {
           name="description"
           content="Akshita is a PhD student in Computer science from Georgia State University and works in field of privacy and Internet of Things."
         />
+        <meta
+          name="google-site-verification"
+          content="xt7njAzR2PbZ8o_zwjSIbq1Xsukc1lp6CJwLf6rB_ao"
+        />
       </Head>
       <Header />
       <div className="columns main">
