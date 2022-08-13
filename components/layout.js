@@ -40,7 +40,11 @@ export default function Layout({ children }) {
       <footer>
         <p>
           Website designed and developed by{" "}
-          <a href="https://github.com/nisheethb/nisheethb" target="_blank">
+          <a
+            href="https://github.com/nisheethb/nisheethb"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Nisheeth Bandaru
           </a>
         </p>
