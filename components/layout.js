@@ -37,6 +37,14 @@ export default function Layout({ children }) {
         </div>
         <div className="column main-content is-flexible">{children}</div>
       </div>
+      <footer>
+        <p>
+          Website designed and developed by{" "}
+          <a href="https://github.com/nisheethb/nisheethb" target="_blank">
+            Nisheeth Bandaru
+          </a>
+        </p>
+      </footer>
     </>
   );
 }
