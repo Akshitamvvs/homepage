@@ -31,3 +31,10 @@ export const PROFESSIONAL_ACTIVITIES = [
       "Committee Chair, Tech Fee Committee, GSU College of Arts and Science",
   },
 ];
+
+export const REVIEWER = [
+  {
+    date: "2022 - Present",
+    title: "IEEE Internet of Things",
+  },
+];
