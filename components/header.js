@@ -32,7 +32,7 @@ export function Header() {
           </h1>
         </a>
       </Link>
-      <h2>Ph.D Student in Computer Science</h2>
+      <h2>Assistant Professor, Department of Computer and Infromation Sciences</h2>
 
       <h3>
         <a
@@ -40,7 +40,7 @@ export function Header() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Georgia State University
+          Towson University
         </a>
       </h3>
       <p>

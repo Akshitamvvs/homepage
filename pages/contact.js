@@ -6,9 +6,9 @@ export default function Contact() {
         <p>
           <b>Akshita Maradapu Vera Venkata Sai</b>
         </p>
-        <p>25 Park Place, Suite 750</p>
-        <p>Georgia State University</p>
-        <p>Atlanta, GA 30303</p>
+        <p>7800 York Road</p>
+        <p>Towson University</p>
+        <p>Towson, MD - 21204</p>
         <p></p>
       </section>
       <section className="main-section">

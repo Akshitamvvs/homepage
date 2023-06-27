@@ -1,4 +1,30 @@
+export const INSTRUCTOR=[
+  {
+    date: "Fall 2023",
+    title: " COSC 612/AIT 624 Software Engnineering I"
+  },
+  {
+    date: "Fall 2023",
+    title: " COSC 412 Software Engnineering "
+  },
+]
+
 export const TEACHING_ASSISTANT = [
+  {
+    date: "Summer 2023",
+    title:
+      "CSC3210 Computer Organization and Programming (Lab Assistant)",
+  },
+  {
+    date: "Spring 2023",
+    title:
+      "CSC4710/6710 Database Management Systems",
+  },
+  {
+    date: "Fall 2022",
+    title:
+      "CSC8714 Advanced Database Systems",
+  },
   {
     date: "Summer 2022",
     title:
@@ -48,7 +74,8 @@ export const TEACHING_FELLOW = [
     date: "Spring 2022",
     title: "CSC4740/6740 Data Mining",
     extra:
-      "**Teaching Effectiveness:** 4.7 (avg.) **Evaluation:** [CSC4740](/docs/sp22dmeval4.pdf), [CSC6740](/docs/sp22dmeval4.pdf) ",
+      "**Teaching Effectiveness:** 4.7 (avg.) **Evaluation:** [CSC4740](/docs/sp22dmeval4.pdf),[CSC6740](/docs/sp22dmeval4.pdf) \
+      <br/> **Awarded** Outstanding Graduate Teaching Assistant.",
   },
   {
     date: "Spring 2020",
