@@ -1,29 +1,26 @@
-export const INSTRUCTOR=[
+export const INSTRUCTOR = [
   {
-    date: "Fall 2023",
-    title: " COSC 612/AIT 624 Software Engnineering I"
+    date: "Spring 2024, Fall 2023",
+    title: " COSC 612/AIT 624 Software Engnineering I",
   },
   {
-    date: "Fall 2023",
-    title: " COSC 412 Software Engnineering "
+    date: "Spring 2024, Fall 2023",
+    title: " COSC 412 Software Engnineering ",
   },
-]
+];
 
 export const TEACHING_ASSISTANT = [
   {
     date: "Summer 2023",
-    title:
-      "CSC3210 Computer Organization and Programming (Lab Assistant)",
+    title: "CSC3210 Computer Organization and Programming (Lab Assistant)",
   },
   {
     date: "Spring 2023",
-    title:
-      "CSC4710/6710 Database Management Systems",
+    title: "CSC4710/6710 Database Management Systems",
   },
   {
     date: "Fall 2022",
-    title:
-      "CSC8714 Advanced Database Systems",
+    title: "CSC8714 Advanced Database Systems",
   },
   {
     date: "Summer 2022",

@@ -16,9 +16,9 @@ export default function Contact() {
           <b>Email:</b>{" "}
           <a
             className="contact-icon"
-            href="mailto:amaradapuveravenkat1@student.gsu.edu"
+            href="mailto:amaradapuveravenkatasai@towson.edu"
           >
-            amaradapuveravenkat1@student.gsu.edu
+            amaradapuveravenkatasai@towson.edu
           </a>
         </p>
       </section>

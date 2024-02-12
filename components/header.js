@@ -32,7 +32,9 @@ export function Header() {
           </h1>
         </a>
       </Link>
-      <h2>Assistant Professor, Department of Computer and Infromation Sciences</h2>
+      <h2>
+        Assistant Professor, Department of Computer and Infromation Sciences
+      </h2>
 
       <h3>
         <a
@@ -46,10 +48,10 @@ export function Header() {
       <p>
         <a
           className="contact-icon"
-          href="mailto:amaradapuveravenkat1@student.gsu.edu"
+          href="mailto:amaradapuveravenkatasai@towson.edu"
         >
           <FontAwesomeIcon icon={faEnvelope} />{" "}
-          amaradapuveravenkat1@student.gsu.edu
+          amaradapuveravenkatasai@towson.edu
         </a>
       </p>
       <p>

@@ -7,9 +7,10 @@ export default function Home() {
       <section className="main-section">
         <h1>About</h1>
         <p>
-          Hi! My name is Akshita Maradapu Vera Venkata Sai. I'm an Assistnat Professor
-          in the Department of Computer and Infromation Sciences at Towson University.
-          I pusued my Ph.D. in Computer Science from Georgia State University under the supervision of{" "}
+          Hi! My name is Akshita Maradapu Vera Venkata Sai. I'm an Assistant
+          Professor in the Department of Computer and Information Sciences at
+          Towson University. I pursued my Ph.D. in Computer Science from Georgia
+          State University under the supervision of{" "}
           <a
             href="http://li.csgsu.org/index.html"
             target="_blank"
@@ -73,7 +74,7 @@ export default function Home() {
           <li>
             <FontAwesomeIcon icon={faGraduationCap} listItem />
             <div>
-              <b>Ph.D., Computer Science</b>, 2023 
+              <b>Ph.D., Computer Science</b>, 2023
             </div>
             <div>Georgia State University</div>
           </li>
